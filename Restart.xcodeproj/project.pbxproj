@@ -13,6 +13,8 @@
 		9E9675362B333A38005483E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E9675352B333A38005483E8 /* Preview Assets.xcassets */; };
 		9E96753E2B333B8B005483E8 /* success.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 9E96753C2B333B8B005483E8 /* success.m4a */; };
 		9E96753F2B333B8B005483E8 /* chimeup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9E96753D2B333B8B005483E8 /* chimeup.mp3 */; };
+		9EBB17792B335165000C6FCA /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBB17782B335165000C6FCA /* OnboardingView.swift */; };
+		9EBB177B2B335176000C6FCA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBB177A2B335176000C6FCA /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		9E96753C2B333B8B005483E8 /* success.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = success.m4a; sourceTree = "<group>"; };
 		9E96753D2B333B8B005483E8 /* chimeup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chimeup.mp3; sourceTree = "<group>"; };
 		9EBB17772B33509E000C6FCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9EBB17782B335165000C6FCA /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		9EBB177A2B335176000C6FCA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				9E9675302B333A37005483E8 /* ContentView.swift */,
+				9EBB17782B335165000C6FCA /* OnboardingView.swift */,
+				9EBB177A2B335176000C6FCA /* HomeView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -179,6 +185,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EBB17792B335165000C6FCA /* OnboardingView.swift in Sources */,
+				9EBB177B2B335176000C6FCA /* HomeView.swift in Sources */,
 				9E9675312B333A37005483E8 /* ContentView.swift in Sources */,
 				9E96752F2B333A37005483E8 /* RestartApp.swift in Sources */,
 			);
@@ -326,7 +334,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = academy.credo.Restart;
+				PRODUCT_BUNDLE_IDENTIFIER = academy.credo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -354,7 +362,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = academy.credo.Restart;
+				PRODUCT_BUNDLE_IDENTIFIER = academy.credo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
