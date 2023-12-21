@@ -95,7 +95,7 @@ It's not how much we give but how much love we put into giving.
                                 }
                             }
                             .onEnded { _ in
-                                withAnimation(Animation.easeOut(duration: 0.4)) {
+                                withAnimation(Animation.easeOut(duration: 0.5)) {
                                     if buttonOffset > buttonWidth / 2 {
                                         buttonOffset = buttonWidth - 80
                                         isOnboardingViewActive = false
