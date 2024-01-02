@@ -13,6 +13,7 @@ struct OnboardingView: View {
     @State private var buttonWidth: Double = UIScreen.main.bounds.width  - 80
     @State private var buttonOffset: CGFloat = 0
     @State private var isAnimating: Bool = false
+    @State private var imageOffset: CGSize = .zero
     var body: some View {
         ZStack {
             Color("ColorBlue")
