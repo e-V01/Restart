@@ -48,6 +48,12 @@ It's not how much we give but how much love we put into giving.
                         .scaledToFit()
                         .opacity(isAnimating ? 1 : 0)
                         .animation(.easeOut(duration: 1), value: isAnimating)
+                        .offset(x: imageOffset.width * 1.2, y: 0)
+                        .gesture(DragGesture()
+                            .onChanged { gesture in
+                                imageOffset = gesture.translation
+                            }
+                        )
                 } //Center
                 Spacer()
                 //MARK: - Footer
