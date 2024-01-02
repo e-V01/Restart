@@ -49,11 +49,20 @@ It's not how much we give but how much love we put into giving.
                         .opacity(isAnimating ? 1 : 0)
                         .animation(.easeOut(duration: 1), value: isAnimating)
                         .offset(x: imageOffset.width * 1.2, y: 0)
-                        .gesture(DragGesture()
+                        .gesture(
+                            DragGesture()
                             .onChanged { gesture in
-                                imageOffset = gesture.translation
+                                if abs(imageOffset.width) <= 150 {
+                                    imageOffset = gesture.translation
+
+                                }
                             }
-                        )
+                                .onEnded { _ in
+                                    imageOffset = .zero
+                                }
+                        ) // : Gesture
+                        .animation(.easeOut(duration: 1),
+                                   value: imageOffset)
                 } //Center
                 Spacer()
                 //MARK: - Footer
