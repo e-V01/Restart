@@ -30,6 +30,7 @@ struct OnboardingView: View {
                         .font(.system(size: 60, weight: .heavy))
                         .foregroundStyle(.white)
                         .transition(.opacity)
+                        .id(textTitle)
                     
                     Text("""
 It's not how much we give but how much love we put into giving.
