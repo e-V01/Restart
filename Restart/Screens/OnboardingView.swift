@@ -43,12 +43,17 @@ It's not how much we give but how much love we put into giving.
                 //MARK: - CEnter
                 ZStack {
                     CircleGroupView(ShapeColor: .white, ShapeOpacity: 0.2)
+                        .offset(x: imageOffset.width * -1)
+                        .blur(radius: abs(imageOffset.width / 5))
+                        .animation(.easeOut(duration: 1),
+                                   value: imageOffset)
                     Image("character-1")
                         .resizable()
                         .scaledToFit()
                         .opacity(isAnimating ? 1 : 0)
                         .animation(.easeOut(duration: 1), value: isAnimating)
                         .offset(x: imageOffset.width * 1.2, y: 0)
+                        .rotationEffect(.degrees(Double(imageOffset.width / 20)))
                         .gesture(
                             DragGesture()
                             .onChanged { gesture in
